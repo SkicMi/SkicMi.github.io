@@ -165,10 +165,10 @@ const deckShots = [
 /* Character scenes give the portfolio a recurring visual identity between its major sections. */
 .persona-interlude{position:relative;width:min(1120px,calc(100% - 96px));aspect-ratio:16/9;margin:48px auto 76px;overflow:hidden;background:#c9c7bb;border:1px solid #c5c3b8;box-shadow:0 18px 50px #1d211d12}
 .persona-interlude>img{width:100%;height:100%;object-fit:cover;display:block}
-.persona-interlude figcaption{position:absolute;left:7%;top:50%;transform:translateY(-50%);display:grid;gap:12px;color:#1d211d}
+.persona-interlude figcaption{position:absolute;left:7%;top:50%;transform:translateY(-50%);display:grid;gap:12px;max-width:min(340px,42%);padding:18px 21px;color:#1d211d;background:rgba(242,241,235,.94);border:1px solid #ffffffa8;box-shadow:0 8px 28px #1d211d18;backdrop-filter:blur(6px)}
 .persona-interlude figcaption span,.scene-coordinate{font:8px var(--mono);letter-spacing:.1em;color:#394238}
 .persona-interlude figcaption b{font:500 clamp(27px,3.2vw,44px)/1.04 var(--serif);letter-spacing:-.045em}
-.scene-coordinate{position:absolute;right:18px;bottom:15px;font-size:7px;text-align:right}
+.scene-coordinate{position:absolute;right:18px;bottom:15px;padding:7px 9px;font-size:7px;text-align:right;background:rgba(242,241,235,.9);border:1px solid #ffffff9c;box-shadow:0 3px 12px #1d211d12}
 .persona-work-scene{margin-top:54px;margin-bottom:0}
-@media(max-width:680px){.persona-interlude{width:calc(100% - 36px);aspect-ratio:auto;margin:32px auto 52px}.persona-interlude>img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}.persona-interlude figcaption{position:static;transform:none;padding:14px 15px 16px;background:var(--paper2);gap:6px}.persona-interlude figcaption span{font-size:7px}.persona-interlude figcaption b{font-size:25px}.scene-coordinate{right:10px;bottom:10px;color:#f1f1e8;text-shadow:0 1px 5px #000;max-width:45%;font-size:6px}.persona-work-scene{margin-top:38px}}
+@media(max-width:680px){.persona-interlude{width:calc(100% - 36px);aspect-ratio:auto;margin:32px auto 52px}.persona-interlude>img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}.persona-interlude figcaption{position:static;transform:none;max-width:none;padding:14px 15px 16px;background:var(--paper2);gap:6px;backdrop-filter:none}.persona-interlude figcaption span{font-size:7px}.persona-interlude figcaption b{font-size:25px}.scene-coordinate{right:8px;bottom:8px;max-width:52%;padding:6px 7px;font-size:6px;color:#263126;background:rgba(242,241,235,.94);text-shadow:none}.persona-work-scene{margin-top:38px}}
 </style>
