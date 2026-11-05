@@ -64,6 +64,12 @@ const deckShots = [
         <div class="hero-foot"><span>FICTIONAL AVATAR · REAL SOFTWARE</span><span>SCROLL TO EXPLORE ↓</span></div>
       </section>
 
+      <figure class="persona-interlude">
+        <img src="/images/persona-reading.webp" alt="Danijel's hooded fictional avatar relaxing with an open C++ book and handwritten notes" loading="lazy" />
+        <figcaption><span>FIELD NOTES / 001</span><b>Ideas take shape<br />between builds.</b></figcaption>
+        <span class="scene-coordinate">THE MAKER, OFF THE CLOCK</span>
+      </figure>
+
       <section class="work-section" id="work">
         <div class="section-heading wrap">
           <div><p class="eyebrow"><span class="eyebrow-line"></span> ONE PROJECT · BUILT FROM A REAL WORKFLOW</p><h2>Selected work<span class="count">01</span></h2></div>
@@ -93,6 +99,11 @@ const deckShots = [
           <div class="feature-strip"><span>TERMINAL / IDE / NOTES / GIT / REMOTE VIEW</span><span>WINDOWS + LINUX PC · IPHONE SAFARI</span></div>
         </article>
 
+        <figure class="persona-interlude persona-work-scene">
+          <img src="/images/persona-coding.webp" alt="Danijel's hooded fictional avatar working on a laptop with code floating nearby" loading="lazy" />
+          <figcaption><span>AT THE DESK / 002</span><b>Built from the<br />work I actually do.</b></figcaption>
+          <span class="scene-coordinate">WEAVERDECK · MADE FOR MY OWN WORKFLOW</span>
+        </figure>
 
 
         <section class="gallery-section wrap" aria-labelledby="gallery-title">
@@ -151,4 +162,13 @@ const deckShots = [
 .persona-hero .hero-foot{max-width:1320px;margin-inline:auto;padding:14px 0 16px;border-top:1px solid #bdc1b5}
 @media(max-width:850px){.persona-hero{padding:42px 25px 0}.persona-stage{grid-template-columns:minmax(145px,1fr) 330px minmax(145px,1fr);gap:18px}.identity-note{padding:17px 14px}.identity-note h2{font-size:22px}.note-index{font-size:7px}}
 @media(max-width:680px){.persona-hero{padding:35px 18px 0}.persona-heading{margin-bottom:23px}.persona-heading h1{font-size:51px}.persona-heading>p:last-child{font-size:12px;max-width:330px}.persona-stage{width:min(390px,100%);grid-template-columns:1fr 1fr;gap:10px 12px;padding-bottom:25px}.persona-stage:before{display:none}.identity-card{grid-column:1/-1;grid-row:1;width:min(330px,100%);justify-self:center;padding:9px;transform:rotate(-.5deg)}.id-top{height:24px;font-size:7px}.id-name-row h2{font-size:22px}.id-fields b{font-size:8px}.identity-note{max-width:none;min-height:150px;padding:14px 12px}.note-left{grid-column:1;grid-row:2;justify-self:stretch}.note-right{grid-column:2;grid-row:2;justify-self:stretch}.identity-note h2{font-size:20px;margin:17px 0 7px}.identity-note p{font-size:10px;line-height:1.55;margin-bottom:12px}.note-mark{font-size:40px;margin-top:15px}.note-right .button{font-size:9px;padding:0 9px;gap:8px}.note-coordinates{font-size:6px;margin-top:12px}.persona-hero .hero-foot{font-size:7px;gap:12px}.persona-hero .hero-foot span:last-child{text-align:right}}
+/* Character scenes give the portfolio a recurring visual identity between its major sections. */
+.persona-interlude{position:relative;width:min(1120px,calc(100% - 96px));aspect-ratio:16/9;margin:48px auto 76px;overflow:hidden;background:#c9c7bb;border:1px solid #c5c3b8;box-shadow:0 18px 50px #1d211d12}
+.persona-interlude>img{width:100%;height:100%;object-fit:cover;display:block}
+.persona-interlude figcaption{position:absolute;left:7%;top:50%;transform:translateY(-50%);display:grid;gap:12px;color:#1d211d}
+.persona-interlude figcaption span,.scene-coordinate{font:8px var(--mono);letter-spacing:.1em;color:#394238}
+.persona-interlude figcaption b{font:500 clamp(27px,3.2vw,44px)/1.04 var(--serif);letter-spacing:-.045em}
+.scene-coordinate{position:absolute;right:18px;bottom:15px;font-size:7px;text-align:right}
+.persona-work-scene{margin-top:54px;margin-bottom:0}
+@media(max-width:680px){.persona-interlude{width:calc(100% - 36px);aspect-ratio:auto;margin:32px auto 52px}.persona-interlude>img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}.persona-interlude figcaption{position:static;transform:none;padding:14px 15px 16px;background:var(--paper2);gap:6px}.persona-interlude figcaption span{font-size:7px}.persona-interlude figcaption b{font-size:25px}.scene-coordinate{right:10px;bottom:10px;color:#f1f1e8;text-shadow:0 1px 5px #000;max-width:45%;font-size:6px}.persona-work-scene{margin-top:38px}}
 </style>
